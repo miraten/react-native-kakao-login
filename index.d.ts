@@ -1,4 +1,4 @@
-declare module '@actbase/react-native-kakao-login' {
+declare module '@beblue/react-native-kakao-login' {
   export interface ProfileType {
     id: number;
     connected_at: string;
@@ -75,5 +75,7 @@ declare module '@actbase/react-native-kakao-login' {
     unlink: () => Promise<'SUCCESS'>;
   }
 
-  export default ARNKakaoLogin;
+  const KakaoLogin: ARNKakaoLogin;
+
+  export default KakaoLogin;
 }
